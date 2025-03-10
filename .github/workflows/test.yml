@@ -1,0 +1,13 @@
+name: Deploy Lambda Function
+
+on: workflow_dispatch
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v2
